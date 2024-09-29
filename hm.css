@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #1c1919;
+    font-family: "Poppins", system-ui;
+  }
+  header {
+    background: #212121;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-system {
+    display: flex;
+  }
+  .left {
+    display: flex;
+  }
+  .logo h2 {
+    color: whitesmoke;
+    font-size: 24px;
+  }
+  .nav ul {
+    display: flex;
+    list-style: none;
+  }
+  .nav li {
+    padding: 5px 13px;
+  }
+  .nav-system {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 16px;
+  }
+  .nav a {
+    color: darkgray;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+  }
+  .icon a {
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .nav {
+    padding: 0 36px;
+  }
+  .nav a:hover {
+    border-bottom: 2px solid;
+  }
+  .bars {
+    display: none;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    
+    .nav {
+      padding: 0 24px;
+      display: none;
+    }
+    .right {
+      display: none;
+    }
+    .bars {
+      display: block;
+    }
+    .bars a {
+      color: white;
+      font-size: 24px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .nav {
+      padding: 0 16px;
+    }
+    .bars {
+      display: block;
+    }
+    .bars a {
+      font-size: 20px;
+    }
+    .bars {
+      padding: 10px;
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+    border: 2px solid gray !important;
+  }
+  
+  .topic-homework-section {
+    text-align: center;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 97px 0;
+
+}
+.topic-homework-section h1 {
+    width: 44rem;
+    font-size: 25px;
+}
+p.in {
+    width: 65rem;
+    color: darkgray;
+    padding: 13px;
+}
+p.out {
+    width: 61rem;
+    text-align: start;
+    line-height: 24px;
+}
+.grade-btn {
+    display: flex;
+    justify-content: center;
+    gap: 79px;
+}
+button{
+  background: #212121;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+  background: #454545;
+  color: white;
+  transition: background 0.3s ease-in-out;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+/* Styles for screens larger than 768px */
+@media screen and (min-width: 769px) {
+  .topic-homework-section h1 {
+    width: 60%;
+    font-size: 30px;
+  }
+  p.in, p.out {
+    width: 80%;
+    padding: 15px;
+  }
+  .grade-btn {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+/* Styles for screens between 729px and 768px */
+@media screen and (min-width: 729px) and (max-width: 768px) {
+  .topic-homework-section h1 {
+    width: 70%;
+    font-size: 28px;
+  }
+  p.in, p.out {
+    width: 85%;
+    color: gray;
+    padding: 14px;
+  }
+  .grade-btn {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+/* Styles for screens smaller than 728px */
+@media screen and (max-width: 728px) {
+  .topic-homework-section h1 {
+    width: 79%;
+    font-size: 25px;
+  }
+  p.in, p.out {
+    width: 90%;
+    color: darkgray;
+    padding: 13px;
+  }
+  .grade-btn {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    flex-direction: column;
+    align-items: center;
+    margin: -86px;
+  }
+}

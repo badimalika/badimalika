@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #1c1919;
+  font-family: "Poppins", system-ui;
+}
+header {
+  background: #212121;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+.nav-system {
+  display: flex;
+}
+.left {
+  display: flex;
+}
+.logo h2 {
+  color: whitesmoke;
+  font-size: 24px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav li {
+  padding: 5px 13px;
+}
+.nav-system {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 16px;
+}
+.nav a {
+  color: darkgray;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+}
+.icon a {
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nav {
+  padding: 0 36px;
+}
+.nav a:hover {
+  border-bottom: 2px solid;
+}
+.bars {
+  display: none;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.hero-text h1 {
+  color: whitesmoke;
+  font-size: 31px;
+  width: 32rem;
+}
+.hero-text {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero-text p {
+  padding: 12px 0;
+  color: white;
+  width: 39rem;
+  line-height: 25px;
+  font-size: 17px;
+}
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Padding for top/bottom and left/right */
+  background-color: #585ad1; /* Background color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-family: "Poppins", system-ui; /* Font family */
+  text-decoration: none; /* No underline for links */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #474dbe; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+button:active {
+  transform: scale(0.95); /* Scale down when active */
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-text p {
+        width: 90%;
+        padding: 25px 0;
+        font-size: 19px;
+        line-height: 32px;
+    }
+  .nav {
+    padding: 0 24px;
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .bars a {
+    color: white;
+    font-size: 24px;
+  }
+  .hero-text h1 {
+    width: 68%;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text h1 {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .hero-text p {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .nav {
+    padding: 0 16px;
+  }
+  .bars {
+    display: block;
+  }
+  .bars a {
+    font-size: 20px;
+  }
+  .bars {
+    padding: 10px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+  border: 2px solid gray !important;
+}

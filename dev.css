@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #1c1919;
+    font-family: "Poppins", system-ui;
+  }
+  header {
+    background: #212121;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-system {
+    display: flex;
+  }
+  .left {
+    display: flex;
+  }
+  .logo h2 {
+    color: whitesmoke;
+    font-size: 24px;
+  }
+  .nav ul {
+    display: flex;
+    list-style: none;
+  }
+  .nav li {
+    padding: 5px 13px;
+  }
+  .nav-system {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 16px;
+  }
+  .nav a {
+    color: darkgray;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+  }
+  .icon a {
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .nav {
+    padding: 0 36px;
+  }
+  .nav a:hover {
+    border-bottom: 2px solid;
+  }
+  .bars {
+    display: none;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    
+    .nav {
+      padding: 0 24px;
+      display: none;
+    }
+    .right {
+      display: none;
+    }
+    .bars {
+      display: block;
+    }
+    .bars a {
+      color: white;
+      font-size: 24px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .nav {
+      padding: 0 16px;
+    }
+    .bars {
+      display: block;
+    }
+    .bars a {
+      font-size: 20px;
+    }
+    .bars {
+      padding: 10px;
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+    border: 2px solid gray !important;
+  }
+/* Wrapper Container */
+.wrap {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping on smaller screens */
+    color: whitesmoke;
+    border: 1px solid #cccc;
+    border-radius: 17px;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 1000px; /* Limit maximum width */
+    padding: 20px;
+    margin: auto; /* Center on larger screens */
+}
+
+/* Image Styling */
+img {
+    height: auto; /* Set height to auto for responsive resizing */
+    max-width: 100%; /* Ensures the image scales to fit its container */
+    border: 1px solid transparent;
+    border-radius: 22px;
+}
+
+/* Right Section */
+.right {
+    padding: 20px 19px;
+    line-height: 1.6; /* Use relative line height for better scaling */
+}
+
+/* Centered Flex Container */
+.haha {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-size: 2.5rem; /* Use rem for font-size to scale better */
+    margin: 23px 0;
+}
+
+/* Developer Section */
+.dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 44px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .wrap {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center;
+    }
+
+    img {
+        height: auto; /* Automatically adjust height for smaller screens */
+        width: 100%; /* Make the image take the full width of its container */
+    }
+
+    .right {
+        padding: 15px; /* Reduce padding for smaller screens */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .haha {
+        font-size: 1.8rem; /* Reduce font-size for smaller devices */
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .dev {
+        margin: 20px; /* Reduce margin on smaller screens */
+        flex-direction: column; /* Stack content vertically */
+    }
+}
